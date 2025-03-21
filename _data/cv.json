@@ -1,152 +1,200 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Shiyang Chen",
+    "email": "shiyang.chen@rutgers.edu",
+    "phone": "978-856-9583",
+    "website": "https://github.com/cctry",
+    "summary": "Ph.D. Student at Rutgers, The State University of New Jersey, focusing on High-Performance Computing",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
+      "address": "New Brunswick, NJ 08854",
+      "postalCode": "08854",
+      "city": "New Brunswick",
       "countryCode": "US",
-      "region": ""
+      "region": "NJ"
     },
     "profiles": [
       {
-        "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
-      },
-      {
-        "network": "ORCID",
-        "username": "",
-        "url": "http://orcid.org/yourorcidurl"
-      },
-      {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "cctry",
+        "url": "https://github.com/cctry"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "institution": "Rutgers, The State University of New Jersey",
+      "position": "Graduate Research Assistant",
+      "startDate": "2023",
+      "endDate": "Present",
+      "advisor": "Hang Liu",
+      "summary": "Research in High-Performance Computing"
+    },
+    {
+      "institution": "ByteDance",
+      "position": "Software Engineer Intern",
+      "startDate": "Summer",
+      "endDate": "2024",
+      "mentor": "Wei Xu",
+      "summary": "Developed a PoC system based on vLLM to disaggregate prefill and decode stages in LLM inference, achieved near-linear latency reduction across multiple nodes"
+    },
+    {
+      "institution": "Microsoft Deepspeed",
+      "position": "External Collabrator",
+      "startDate": "2023",
+      "endDate": "2024",
+      "mentor": "Shuaiwen Leon Song",
+      "summary": "Extended DeepSpeed framework for AI-for-science workloads and developed GPU kernels for model quantization"
+    },
+    {
+      "institution": "Amazon Web Service",
+      "position": "Applied Scientist Intern",
+      "startDate": "Summer",
+      "endDate": "2023",
+      "mentor": "Xiang Song",
+      "summary": "Developed large-scale GNN inference system, reducing processing time from days to under an hour"
+    },
+    {
+      "institution": "Amazon Web Service",
+      "position": "Applied Scientist Intern",
+      "startDate": "2022-06",
+      "endDate": "2022-12",
+      "mentor": "Da Zheng",
+      "summary": "Built system for low-latency, staleness-bounded temporal GNN inference on distributed graphs"
+    },
+    {
+      "institution": "Lawrence Livermore National Laboratory",
+      "position": "Research Intern",
+      "startDate": "Summer",
+      "endDate": "2020",
+      "mentor": "Chunhua Liao",
+      "summary": "Developed GPU-accelerated Monte Carlo sampling framework using ray tracing cores"
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
+      "institution": "Rutgers, The State University of New Jersey",
+      "area": "Ph.D. in High-Performance Computing",
+      "department": "Department of Electrical & Computer Engineering",
+      "studyType": "Ph.D.",
+      "startDate": "2023",
+      "endDate": "Present",
+      "advisor": "Hang Liu",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
+      "institution": "Stevens Institute of Technology",
+      "area": "Master in High-Performance Computing",
+      "department": "Department of Electrical & Computer Engineering",
+      "studyType": "Master",
+      "startDate": "2020",
+      "endDate": "2022",
+      "advisor": "Hang Liu",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
+      "institution": "Huazhong University of Science & Technology",
+      "area": "B.E. in Electric Science and Technology",
+      "department": "School of Optical and Electronic Information",
+      "studyType": "B.E.",
+      "startDate": "2015",
+      "endDate": "2019",
       "gpa": null,
       "courses": []
+    }
+  ],
+  "publications": [
+    {
+      "name": "FP6-LLM: Efficiently Serving Large Language Models Through FP6-Centric Algorithm-System Co-Design",
+      "authors": "Haojun Xia, Zhen Zheng, Xiaoxia Wu, Shiyang Chen, et al.",
+      "publisher": "USENIX Annual Technical Conference (ATC)",
+      "releaseDate": "2024",
+      "type": "conference"
+    },
+    {
+      "name": "Kernel fusion in atomistic spin dynamics simulations on Nvidia GPUs using tensor core",
+      "authors": "Hongwei Chen, Shiyang Chen, Joshua J. Turner, Adrian Feiguin",
+      "publisher": "Journal of Computational Science",
+      "releaseDate": "2024",
+      "type": "journal"
+    },
+    {
+      "name": "TEA+: A Novel Temporal Graph Random Walk Engine With Hybrid Storage Architecture",
+      "authors": "Chengying Huan, et al.",
+      "publisher": "ACM Transactions on Architecture and Code Optimization (TACO)",
+      "releaseDate": "2024",
+      "type": "journal"
+    },
+    {
+      "name": "TANGO: rethinking quantization for graph neural network training on GPUs",
+      "authors": "Shiyang Chen, Da Zheng, Caiwen Ding, Chengying Huan, Yuede Ji, Hang Liu",
+      "publisher": "International Conference for High Performance Computing, Networking, Storage and Analysis (SC)",
+      "releaseDate": "2023",
+      "type": "conference"
+    },
+    {
+      "name": "PeeK: A Prune-Centric Approach for K Shortest Path Computation",
+      "authors": "Wang Feng, Shiyang Chen, Hang Liu, Yuede Ji",
+      "publisher": "International Conference for High Performance Computing, Networking, Storage and Analysis (SC)",
+      "releaseDate": "2023",
+      "type": "conference"
+    },
+    {
+      "name": "DeepSpeed4Science Initiative: Enabling Large-Scale Scientific Discovery through Sophisticated AI System Technologies",
+      "authors": "Shuaiwen Song, et al.",
+      "publisher": "NeurIPS 2023 AI for Science Workshop",
+      "releaseDate": "2023",
+      "type": "workshop"
+    },
+    {
+      "name": "Motif-Based Graph Representation Learning with Application to Chemical Molecules",
+      "authors": "Yifei Wang, Shiyang Chen, Guobin Chen, Ethan Shurberg, Hang Liu, Pengyu Hong",
+      "publisher": "Informatics Vol. 10. No. 1",
+      "releaseDate": "2023",
+      "type": "journal"
+    },
+    {
+      "name": "A Length Adaptive Algorithm-Hardware Co-design of Transformer on FPGA Through Sparse Attention and Dynamic Pipelining",
+      "authors": "Hongwu Peng, et al.",
+      "publisher": "59th ACM/IEEE Design Automation Conference (DAC)",
+      "releaseDate": "2022",
+      "type": "conference"
+    },
+    {
+      "name": "Sparse Progressive Distillation: Resolving Overfitting under Pretrain-and-Finetune Paradigm",
+      "authors": "Shaoyi Huang, et al.",
+      "publisher": "60th Annual Meeting of the Association for Computational Linguistics (ACL)",
+      "releaseDate": "2022",
+      "type": "conference"
+    },
+    {
+      "name": "E.T.: Rethinking Transformer Models on GPUs",
+      "authors": "Shiyang Chen, Shaoyi Huang, Santosh Pandey, Bingbing Li, Guang Gao, Long Zheng, Caiwen Ding, Hang Liu",
+      "publisher": "International Conference for High Performance Computing, Networking, Storage and Analysis (SC)",
+      "releaseDate": "2021",
+      "type": "conference"
+    },
+    {
+      "name": "Optimizing FPGA-based Accelerator Design for Large-Scale Molecular Similarity Search",
+      "authors": "Hongwu Peng, Shiyang Chen, et al.",
+      "publisher": "International Conference On Computer Aided Design (ICCAD)",
+      "releaseDate": "2021",
+      "type": "conference"
+    },
+    {
+      "name": "HMC-TRAN: A Tensor-core Inspired Hierarchical Model Compression for Transformer-based DNNs on GPU",
+      "authors": "Shaoyi Huang, Shiyang Chen, et al.",
+      "publisher": "Great Lakes Symposium on VLSI (GLVLSI)",
+      "releaseDate": "2021",
+      "type": "conference"
     }
   ],
   "skills": [],
   "languages": [],
   "interests": [],
   "references": [],
-  "publications": [
-    {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "http://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
-    }
-  ],
-  "presentations": [
-    {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
-    }
-  ],
-  "teaching": [
-    {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "presentations": [],
+  "teaching": [],
+  "portfolio": []
 }

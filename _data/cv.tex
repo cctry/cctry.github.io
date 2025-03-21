@@ -1,0 +1,260 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[12pt, a4paper]{article}
+\usepackage{fontspec} 
+\usepackage{siunitx}
+\usepackage{enumitem}
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=6in, textheight=10in, marginparsep=10pt, left=40mm, marginparwidth=.8in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{multicol}
+\usepackage{url}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{#1}}
+\renewcommand*{\raggedleftmarginnote}{}
+% \setlength{\marginparsep}{12pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Shiyang Chen - Curriculum Vitae},
+	pdfauthor={Shiyang Chen}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+
+{\Large {\bf Curriculum Vitae - Shiyang Chen}}
+
+\rule{0.72\paperwidth}{0.8pt}
+
+
+\vspace{0.5em}
+
+Ph.D. Student\hspace{8.13cm} \texttt{978-856-9583}
+
+Rutgers, The State University of New Jersey, \hspace{2.79cm} \href{mailto: shiyang.chen@rutgers.edu}{shiyang.chen@rutgers.edu}
+
+New Brunswick, NJ 08854 \hspace{5.9cm} \href{https://github.com/cctry}{GitHub homepage}
+
+% ACM student membership number: 1912133
+
+
+\vspace*{-2mm}
+\section*{EDUCATION}
+\vspace*{-2mm}
+% \years{2019 - \\Present} \textbf{Ph.D. Student} in \textbf{High-Performance Computing}\\
+% Department of Electrical \& Computer Engineering\\
+% \textit{Rutgers, The State University of New Jersey}\\
+% Adviser: Hang Liu\\
+
+\years{2023 - \\Present} \textbf{Ph.D. Student} in \textbf{High-Performance Computing}\\
+Department of Electrical \& Computer Engineering\\
+\textit{Rutgers, The State University of New Jersey}\\
+Advisor: Hang Liu\\
+
+\years{2020 - \\2022} \textbf{Master Student} in \textbf{High-Performance Computing}\\
+Department of Electrical \& Computer Engineering\\
+\textit{Stevens Institute of Technology}\\
+Advisor: Hang Liu\\
+
+% \years{2019 - \\2023} \textbf{Ph.D. Student} in \textbf{High-Performance Computing}\\
+% Department of Electrical \& Computer Engineering\\
+% \textit{Stevens Institute of Technology}\\
+% Adviser: Hang Liu\\
+
+\years{2015 - 2019} \textbf{B.E.} in \textbf{Electric Science and Technology}\\
+School of Optical and Electronic Information \\
+\textit{Huazhong University of Science \& Technology}\\
+
+% \years{2012 - 2015} \textbf{High school}\\
+% \textit{Shenzhen Hongling Middle School}
+
+\vspace*{-2mm}
+\section*{EXPERIENCES}
+\vspace*{-2mm}
+
+\years{2023 - \\Present}
+		\textbf{Graduate Research Assistant}\\
+		\textit{Rutgers, The State University of New Jersey}\\
+		Adviser: Hang Liu\\
+		
+\years{Summer\\2020} \textbf{Research Intern}\\
+\textit{Lawrence Livermore National Laboratory}\\
+Mentor: Chunhua Liao \\
+Project: \textbf{Monte Carlo sampling with emerging hardware.} 
+\begin{itemize}
+    \item Developed a GPU-accelerated Monte Carlo sampling framework, leveraging ray tracing cores and associated acceleration structures on NVIDIA GPUs.
+    \item Reformulated sampling as a rendering problem, utilizing OptiX framework, Tensor Cores, and CUDA kernels to build and preprocess data structures.
+    \item Achieved significant reduced turn-around time in quantum mechanism simulations.
+\end{itemize}
+
+
+\years{2022.6-12} \textbf{Applied Scientist Intern}\\
+\textit{Amazon Web Service}\\
+Mentor: Da Zheng \\
+Project: \textbf{Online inference for temporal Graph Neural Network.} 
+\begin{itemize}
+    \item Built the system for low-latency, staleness-bounded temporal GNN inference on distributed, large-scale graphs.
+    \item Designed a staleness-bounded request scheduling algorithm, enabling efficient real-time GNN inference with dynamic graph updates.
+    \item Delivered the system, making it the first deployed solution supporting online temporal GNN inference in production.
+    
+\end{itemize}
+
+
+\years{Summer\\2023} \textbf{Applied Scientist Intern}\\
+\textit{Amazon Web Service}\\
+Mentor: Xiang Song \\
+Project: \textbf{Large-scale Graph Neural Network inference.} 
+\begin{itemize}
+    \item Developed an end-to-end large-scale GNN inference system, optimizing both graph construction and node embedding computation.
+    \item Designed GPU kernels for efficient graph processing and GNN computations across distributed machines, scaling to up to 48 EC2 instances.
+    \item The system was deployed in production and integrated into the open-sourced GraphStorm project. It reduces end-to-end processing time from days to under an hour.
+\end{itemize}
+
+
+\years{2023 - \\2024}
+		\textbf{External Collabrator}\\
+		\textit{Microsoft Deepspeed}\\
+		Mentor: Shuaiwen Leon Song\\
+Project: \textbf{Deepspeed AI for Science. Large Language Model inference.}
+\begin{itemize}
+\item Extended the DeepSpeed framework for AI-for-science workloads, optimizing models like OpenFold and AI2BMD with customized GPU kernels.
+\item Developed GPU kernels and system optimizations for DeepSpeed-Inference, especially for model quantization.
+\end{itemize}
+
+
+
+
+\years{Summer\\2024}
+		\textbf{Software Engineer Intern}\\
+		\textit{ByteDance}\\
+		Mentor: Wei Xu\\
+Project: \textbf{Disaggregated LLM inference framework.} 
+\begin{itemize}
+\item Designed a PoC system based on vLLM to disaggregate prefill and decode stages in LLM inference.
+\item Developed a high-throughput, low-overhead KV cache transfer network library, enabling efficient distributed inference.
+\item Achieved near-linear latency reduction as the system scaled across multiple nodes.
+\end{itemize}
+
+% \vspace*{-2mm}
+
+
+% \newpage
+
+\section*{RESEARCH - PUBLICATIONS}
+% \vspace*{-2.5mm}
+% * indicate students advised by me
+\vspace{-2mm}
+
+\years{2021} \textbf{Shiyang Chen}, Shaoyi Huang, Santosh Pandey, Bingbing Li, Guang Gao, Long Zheng, Caiwen Ding and Hang Liu. "E.T.: Rethinking Transformer Models on GPUs". In \textit{Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (\textbf{SC})}. ACM, 2021.
+
+\vspace*{2mm}
+
+\years{2021} Hongwu Peng, \textbf{Shiyang Chen}, Zhepeng Wang, Junhuan Yang, Scott Weitze, Tong Geng, Ang Li, Jinbo Bi, Minghu Song, Weiwen Jiang, Hang Liu and Caiwen Ding. "Optimizing FPGA-based Accelerator Design for Large-Scale Molecular Similarity Search". In \textit{Proceedings of the International Conference On Computer Aided Design (\textbf{ICCAD})}. IEEE/ACM, 2021.
+
+\vspace*{2mm}
+
+\years{2021} Shaoyi Huang, \textbf{Shiyang Chen}, Hongwu Peng, Daniel Manu, Zhenglun Kong, Geng Yuan, Lei Yang, Shusen Wang, Hang Liu and Caiwen Ding. "HMC-TRAN: A Tensor-core Inspired Hierarchical Model Compression for Transformer-based DNNs on GPU". In \textit{Proceedings of Proceedings of the 2021 on Great Lakes Symposium on VLSI (\textbf{GLVLSI})}. ACM, 2021.
+
+\vspace*{2mm}
+
+\years{2022} Shaoyi Huang, Dongkuan Xu, Ian Yen, Yijue Wang, Sung-En Chang, Bingbing Li, \textbf{Shiyang Chen}, Mimi Xie, Sanguthevar Rajasekaran, Hang Liu and Caiwen Ding. "Sparse Progressive Distillation: Resolving Overfitting under Pretrain-and-Finetune Paradigm". In \textit{Proceedings of the 60th Annual Meeting of the Association for Computational Linguistics (\textbf{ACL})}. ACL, 2022.
+
+\vspace*{2mm}
+
+\years{2022} Hongwu Peng, Shaoyi Huang, \textbf{Shiyang Chen}, Bingbing Li, Tong Geng, Ang Li, Weiwen Jiang, Wujie Wen, Jinbo Bi, Hang Liu and Caiwen Ding. "A Length Adaptive Algorithm-Hardware Co-design of Transformer on FPGA Through Sparse Attention and Dynamic Pipelining". In \textit{2022 59th ACM/IEEE Design Automation Conference (\textbf{DAC})}. IEEE, 2022.
+
+\vspace*{2mm}
+
+\years{2023} Yifei Wang, \textbf{Shiyang Chen}, Guobin Chen, Ethan Shurberg, Hang Liu, Pengyu Hong. "Motif-Based Graph Representation Learning with Application to Chemical Molecules". In \textit{Informatics Vol. 10. No. 1}. MDPI, 2023.
+
+\vspace*{2mm}
+
+\years{2023} \textbf{Shiyang Chen}, Da Zheng, Caiwen Ding, Chengying Huan, Yuede Ji and Hang Liu. "\textsc{Tango}: rethinking quantization for graph neural network training on GPUs". In \textit{Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (\textbf{SC})}. ACM, 2023. 
+
+\vspace*{2mm}
+
+\years{2023} Wang Feng, \textbf{Shiyang Chen}, Hang Liu and Yuede Ji. "\textsc{PeeK}: A Prune-Centric Approach for $K$ Shortest Path Computation". In \textit{Proceedings of the International Conference for High Performance Computing, Networking, Storage and Analysis (\textbf{SC})}. ACM, 2023. 
+
+
+
+\vspace*{2mm}
+
+\years{2023} Shuaiwen Song, Bonnie Kruft, Minjia Zhang, Conglong Li, \textbf{Shiyang Chen}, Chengming Zhang, Masahiro Tanaka, Xiaoxia Wu, Mohammed AlQuraishi, Gustaf Ahdritz, Christina Floristean, Rick Stevens, Venkatram Vishwanath, Arvind Ramanathan, Sam Foreman, Kyle Hippe, Prasanna Balaprakash, Yuxiong He. "DeepSpeed4Science Initiative: Enabling Large-Scale Scientific Discovery through Sophisticated AI System Technologies". In \textit{\textbf{NeurIPS} 2023 AI for Science Workshop.}  
+
+\vspace*{2mm}
+
+\years{2023} Xiaoxia Wu, Haojun Xia, Stephen Youn, Zhen Zheng, \textbf{Shiyang Chen}, Arash Bakhtiari, Michael Wyatt, Reza Yazdani Aminabadi, Yuxiong He, Olatunji Ruwase, Leon Song, Zhewei Yao.
+"ZeroQuant(4+2): Redefining LLMs Quantization with a New FP6-Centric Strategy for Diverse Generative Tasks". \textit{Arxiv Preprint}.
+
+\vspace*{2mm}
+
+\years{2024}
+Chengying Huan, Yongchao Liu, Heng Zhang, Shuaiwen Song, Santosh Pandey, \textbf{Shiyang Chen}, Xiangfei Fang, Yue Jin, Baptiste Lepers, Yanjun Wu, Hang Liu. "TEA+: A Novel Temporal Graph Random Walk Engine With Hybrid Storage Architecture". In \textit{ACM Transactions on Architecture and Code Optimization (\textbf{TACO})}.
+
+\vspace*{2mm}
+
+\years{2024}
+
+Haojun Xia, Zhen Zheng, Xiaoxia Wu, \textbf{Shiyang Chen}, Zhewei Yao, Stephen Youn, Arash Bakhtiari, Michael Wyatt, Donglin Zhuang, Zhongzhu Zhou , Olatunji Ruwase, Yuxiong He, Shuaiwen Leon Song. "FP6-LLM: Efficiently Serving Large Language Models Through FP6-Centric Algorithm-System Co-Design". In \textit{2024 USENIX Annual Technical Conference (\textbf{ATC})}, USENIX, 2024.
+
+\vspace*{2mm}
+
+\years{2024} Ahdritz, Gustaf, et al. "OpenFold: Retraining AlphaFold2 yields new insights into its learning mechanisms and capacity for generalization." \textit{Nature Methods}: 1-11.
+
+\vspace*{2mm}
+
+\years{2024} Hongwei Chen, \textbf{Shiyang Chen}, Joshua J. Turner, Adrian Feiguin. "Kernel fusion in atomistic spin dynamics simulations on Nvidia GPUs using tensor core." \textit{Journal of Computational Science} (2024): 102357.
+
+
+
+\end{document}
